@@ -29,7 +29,7 @@ shared/         ← Placeholder for imported template compatibility
   const.ts      ← Shared constants
 ```
 
-### ⚠️ Handling Images & Media
+### Handling Images & Media
 
 **DO NOT** store images, videos, or large assets in `client/public/` or `client/src/assets/`. Local media files will cause deployment timeouts.
 
@@ -44,7 +44,7 @@ Files in `client/public` are available at the root of your site—reference them
 
 ---
 
-## 🎯 Development Workflow
+## Development Workflow
 
 1. **Choose a design style** before you write any frontend code according to Design Guide (color, font, shadow, art style). Tell user what you chose. Remember to edit `client/src/index.css` for global theming and add needed font using google font cdn in `client/index.html`.
 2. **Compose pages** in `client/src/pages/`. Keep sections modular so they can be reused across routes.
@@ -53,7 +53,7 @@ Files in `client/public` are available at the root of your site—reference them
 5. **Fetch external data** with `useEffect` if the site needs dynamic content from public APIs.
 ---
 
-## 🎨 Frontend Development Guidelines
+## Frontend Development Guidelines
 
 **UI & Styling:**
 - Prefer shadcn/ui components for interactions to keep a modern, consistent look; import from `@/components/ui/*` (e.g., `button`, `card`, `dialog`).
@@ -77,7 +77,7 @@ This template customizes some Tailwind/shadcn defaults for simplified usage:
 
 ---
 
-## 🎨 Design Guide
+## Design Guide
 
 When generating frontend UI, avoid generic patterns that lack visual distinction:
 - Avoid generic full-page centered layouts—prefer asymmetric/sidebar/grid structures for landing pages and dashboards
@@ -116,7 +116,7 @@ When implementing features that match these categories, MUST evaluate the compon
 
 ---
 
-## 🗺️ Maps Integration
+## Maps Integration
 
 **CRITICAL: The Manus proxy provides FULL access to ALL Google Maps features** - including advanced drawing, heatmaps, Street View, all layers, Places API, etc. Do NOT ask users for Google Map API keys - authentication is automatic.
 
@@ -127,7 +127,7 @@ NEVER use external map libraries or request API keys from users - the Manus prox
 
 ---
 
-## ✅ Launch Checklist
+## Launch Checklist
 - [ ] UI layout and navigation structure correct, all image src valid.
 - [ ] Success + error paths verified in the browser
 
